@@ -47,14 +47,14 @@ android {
 
 dependencies {
 
-  final SUPPORT_LIBRARY_VERSION = '25.1.1'
+  final SUPPORT_LIBRARY_VERSION = '25.2.0'
   final RETROFIT_VERSION = '2.2.0'
   final OKHTTP_VERSION = '3.6.0'
   final DAGGER_VERSION = '2.9'
-  final RX_JAVA_VERSION = '2.0.5'
+  final RX_JAVA_VERSION = '2.0.6'
   final RX_ANDROID_VERSION = '2.0.1'
   final DEBUG_DRAWER_VERSION = '0.7.0'
-  final RXBINDING_VERSON = '1.0.0'
+  final RXBINDING_VERSON = '1.0.1'
   final RXLIFECYCLE = '2.0.1'
   final anko_version = '0.9.1a'
 
