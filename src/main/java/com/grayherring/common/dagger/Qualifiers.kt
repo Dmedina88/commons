@@ -3,9 +3,6 @@ package com.grayherring.common.dagger
 import javax.inject.Qualifier
 import kotlin.annotation.AnnotationRetention.RUNTIME
 
-/**
- * Created by davidmedina on 2/12/17 =).
- */
 class Qualifiers private constructor() {
 
   init {
@@ -16,5 +13,4 @@ class Qualifiers private constructor() {
 
   @Qualifier @Retention(RUNTIME) annotation class MockPref
 
-  @Qualifier @Retention(RUNTIME) annotation class BookRelay
 }
