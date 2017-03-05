@@ -48,22 +48,22 @@ class DebugViewActivity : BaseActivity() {
     )
   }
 
-  override protected fun onStart() {
+  override fun onStart() {
     super.onStart()
     debugView.onStart()
   }
 
-  override protected fun onResume() {
+  override fun onResume() {
     super.onResume()
     debugView.onResume()
   }
 
-  override protected fun onPause() {
+  override fun onPause() {
     super.onPause()
     debugView.onPause()
   }
 
-  override protected fun onStop() {
+  override fun onStop() {
     super.onStop()
     debugView.onStop()
   }

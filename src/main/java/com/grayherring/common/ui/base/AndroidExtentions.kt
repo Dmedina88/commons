@@ -12,8 +12,8 @@ import org.jetbrains.anko.custom.ankoView
 import java.io.File
 
 /**
- * Created by davidmedina on 2/10/17 =).
- */
+* Created by davidmedina on 2/10/17 =).
+*/
 
 inline fun ViewManager.debugView(theme: Int = 0, init: (DebugView) -> Unit) = ankoView(::DebugView,
                                                                                         theme,
