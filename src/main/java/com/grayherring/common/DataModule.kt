@@ -1,7 +1,6 @@
 package com.grayherring.common
 
 import android.app.Application
-import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import com.grayherring.common.dagger.PerApp
 import com.grayherring.common.dagger.Qualifiers.MockPref
@@ -23,10 +22,11 @@ class DataModule {
         .build()
   }
 
-  @Provides @PerApp fun provideSharedPreferences(app: Application): SharedPreferences
-      = app.defaultSharedPreferences
+  @Provides @PerApp fun provideSharedPreferences(app: Application): SharedPreferences = app.defaultSharedPreferences
 
   @Provides @PerApp @MockPref fun provideMockPref(pref: SharedPreferences): BoolPreferences
-      = BoolPreferences(pref, "MockPref")
+      = BoolPreferences(
+      pref,
+      "MockPref")
 
 }

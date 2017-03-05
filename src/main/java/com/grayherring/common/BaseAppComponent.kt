@@ -1,6 +1,8 @@
 package com.grayherring.common
 
 import com.grayherring.common.dagger.PerApp
+import com.grayherring.common.ui.util.DebugComponent
+import com.grayherring.common.ui.util.DebugModule
 import dagger.Component
 
 @PerApp
@@ -24,6 +26,8 @@ interface BaseAppComponent {
     }
   }
 
+  // this would crash in release unless I remove this or move the debug activity to main
+  fun plus(debugModule: DebugModule): DebugComponent
 
 }
 
