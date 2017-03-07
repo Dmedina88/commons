@@ -1,7 +1,6 @@
 package com.grayherring.common.ui.util
 
 import android.os.Bundle
-import com.grayherring.common.BaseApp
 import com.grayherring.common.ui.base.BaseActivity
 import com.grayherring.common.ui.base.debugView
 import com.readystatesoftware.chuck.Chuck
@@ -22,7 +21,7 @@ class DebugViewActivity : BaseActivity() {
   private lateinit var debugView: DebugView
 
   override fun initializeDependencyInjector() {
-    component = BaseApp.get(this).component.plus(DebugModule(this))
+    //  component = BaseApp.get(this).component.plus(DebugModule(this))
   }
 
   override fun onCreate(savedInstanceState: Bundle?) {
